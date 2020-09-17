@@ -1,23 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
  <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+    <style>
+/********** Styles ***********/
+      * {
+        box-sizing: border-box;
+      }
+       .box{
+          font-family: Helvetica,Arial;
+          float: left;
+          top: -30px;
+        }
+        .p1{
+          background-color: lightgrey;
+          border: 1px solid black;
+          clear: both;
+        }
+         .p5{
+          background-color: lightgrey;
+          font-family: Helvetica,Arial;
+          font-size: 14px;
+          clear: both;
+          padding: 10px;
+        }
+        .p2{
+          background-color: pink;
+          border: 1px solid black;
+          font-family: Helvetica,Arial;
+          font-size: 20px;
+          padding: 5px;
+          position: relative;
+          float: right;
+          width: 70px;
+          text-align: center;
+        }
+        .p3{
+          background-color: orange;
+          border: 1px solid black;
+          font-family: Helvetica,Arial;
+          font-size: 20px;
+          padding: 5px;
+          position: relative;
+          float: right;
+          width: 70px;
+          text-align: center;
+        }
+        .p4{
+          background-color: yellow;
+          border: 1px solid black;
+          font-family: Helvetica,Arial;
+          font-size: 20px;
+          padding: 5px;
+          position: relative;
+          float: right;
+          width: 70px;
+          text-align: center;
+        }
+        /* Simple Responsive Framework.*/
+       .row {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        }
+        h1 {
+          margin: 30px;
+          font-family: Helvetica,Arial;
+          text-align: center;
+        }
+        
+/*************** Media ********************/
+        /****** DESKTOP ******/
+       @media (min-width: 992px)
+        {
+          .box {
+          width: 33.33%;
+          padding: 10px;
+        }
 
-    <title>HTML is Structure Only (After)</title>
+       }
+        /****** TABLET ******/
+       @media (min-width: 768px) and (max-width: 991px) 
+        {
+          .box {
+            width: 50%;
+            padding: 15px;
+          }
+          .box1{
+            width:100%;
+            
+          }
+        }
+        /****** PHONE ******/
+       @media (max-width: 767px) 
+        {
+          .box{
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 18px;
+          }
+        }
+</style>
   </head>
 
-  <body>
-    <h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
-    <p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae temporibus esse suscipit nisi ad.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloribus eos perspiciatis.</p>
-    <h1> Blablabla </h1>
-    <footer>
-      <hr>
-      <p style="text-align: center;" 
-         onclick="alert('EMAILING US IS USELESS');">
-         Tech Support: yeah.right@server-is-down.com
-      </p>
-    </footer>
+   <body>
+    <h1>Our menu</h1>
+
+    <div class="row">
+
+      <div class="box">
+        <div class="p1"><div class="p2">Pollito</div><div class="p5">
+      It’s a wonderful morning for breakfast tacos. Give me all your tacos. Give me all the tacos, immediately. Flour or corn tortillas? It’s long been rumored that the chupacabra is really just a crazed man who’s local taco shop went out of business. Fish tacos with cabbage slaw and a side of chips and guac.</div></div></div>
+
+      <div class="box">
+        <div class="p1"><div class="p3">Perro</div><div class="p5">
+      It’s a wonderful morning for breakfast tacos. Give me all your tacos. Give me all the tacos, immediately. Flour or corn tortillas? It’s long been rumored that the chupacabra is really just a crazed man who’s local taco shop went out of business. Fish tacos with cabbage slaw and a side of chips and guac.</div></div></div>
+
+      <div class="box box1">
+        <div class="p1"><div class="p4">Mole</div><div class="p5">
+      It’s a wonderful morning for breakfast tacos. Give me all your tacos. Give me all the tacos, immediately. Flour or corn tortillas? It’s long been rumored that the chupacabra is really just a crazed man who’s local taco shop went out of business. Fish tacos with cabbage slaw and a side of chips and guac.</div></div></div>
+
+    </div>
+
   </body>
 </html>
