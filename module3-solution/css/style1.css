@@ -84,6 +84,82 @@ body {
   margin-bottom: 15px;
 }
 
+/****** ESTILO DE LAS COSAS DEBAJO DE PORTADA ******/
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  border: 1px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #3b3b3b;
+}
+
+#menu-tile {
+  background: url('../img/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../img/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/****** FOOTER ******/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  color: white;
+}
+#hours > p{
+	margin: 14px 0px 14px;
+}
+.panel-footer div.row {
+  margin-bottom: 40px;
+}
+#hours, #address {
+  line-height: 1.7;
+}
+#hours > span, #address > span {
+  font-size: 1.4em;
+}
+#address p {
+  margin-top: 10px;
+  color: #557c3e;
+  font-size: .9em;
+  line-height: 1.5;
+  font-weight: bold;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+.text-center {
+	letter-spacing: .1em;
+}
+
+
 /****** MEDIA QUERIES PARA RESPONSIVIDAD ******/
 
 /********** Large devices only **********/
@@ -130,8 +206,7 @@ body {
     border-radius: 0;
     margin-top:2vw;
     padding: 0;
-    margin: 2.3vw;
-    
+    margin-bottom: 25px;
 
   }
 }
@@ -188,11 +263,36 @@ body {
     margin: 2.3vw;
     box-shadow: 0 0 6px #3F0C1F;
   }
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
   /* End Header */
 
+ /* FOOTER */.panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
 }
-
-
 
 
 

@@ -1,0 +1,308 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+    }
+
+body {
+  font-size: 20px;
+  color: blue;
+  background-color: #efefefff;
+  font-family: sans-serif;
+}
+
+/*********** COSAS DEL SITIO CHINO ***********/
+#header-nav{
+	background-color: #b7b7b7ff ;
+	border-radius: 0 ;
+	/*
+	border-color: black;
+	border-width: 2.5px;
+	*/
+}
+
+/*********** COSAS DEL SITIO CHINO ***********/
+#logo-img {
+  background: url('../img/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 25px 10px 0;
+}
+
+/**** NOMBRE DEL RESTAURANTE - HEAD ****/
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #333;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p {
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #1119;
+}
+
+/**** DETALLES DE LOS ÍCONOS DEL MENU ****/
+#nav-list {
+  margin-top: 30px;
+}
+#nav-list a {
+  color: #7D3234;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.5em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 17px;
+  font-weight: bold;
+}
+/****** ESTILO DEL BOTON ******/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #7D3234;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -35px;
+  margin-bottom: 15px;
+}
+
+/****** ESTILO DE LAS COSAS DEBAJO DE PORTADA ******/
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  border: 1px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #3b3b3b;
+}
+
+#menu-tile {
+  background: url('../img/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../img/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/****** FOOTER ******/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+  color: white;
+}
+#hours > p{
+	margin: 14px 0px 14px;
+}
+.panel-footer div.row {
+  margin-bottom: 40px;
+}
+#hours, #address {
+  line-height: 1.7;
+}
+#hours > span, #address > span {
+  font-size: 1.4em;
+}
+#address p {
+  margin-top: 10px;
+  color: #557c3e;
+  font-size: .9em;
+  line-height: 1.5;
+  font-weight: bold;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+.text-center {
+	letter-spacing: .1em;
+}
+
+
+/****** MEDIA QUERIES PARA RESPONSIVIDAD ******/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+.container .jumbotron {
+    background: url('../img/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+    box-shadow: 0 0 6px #3F0C1F;
+    border-radius: 0;
+    margin-top:2vw;
+    padding: 0;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../img/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 15px 20px 15px 0px;
+  }
+
+  .container .jumbotron {
+    background: url('../img/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 5px #3F0C1F;
+    border-radius: 0;
+    margin-top:2vw;
+  }
+
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+.container .jumbotron {
+    background: url('../img/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+    box-shadow: 0 0 4px #3F0C1F;
+    border-radius: 0;
+    margin-top:2vw;
+    padding: 0;
+    margin-bottom: 25px;
+
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: .1vw;
+    height: 15vw;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: .3vw;
+    font-size: 5.4vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: 2.2vw;
+    margin-top: 2vw;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 3vw;
+    margin-top: -.8vw;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 3vw;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 3.4vw;
+    margin-right: 2vw;
+  }
+
+  #call-btn > a {
+    font-size: 4vw;
+    display: block;
+    margin: 0 4vw;
+    margin-top: -.2vw;
+    padding: 1vw;
+    border: .2vw solid #7D3234;
+    background-color: #b7b7b7ff;
+    color: #7D3234;
+  }
+  #xs-deliver {        /*WE DELIVER*/
+    margin-top: 1.9vw;
+    font-size: 2vw;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #7D3234;
+    font-weight: bold;
+  }
+
+    .container .jumbotron {
+    padding: 0;
+    margin: 2.3vw;
+    box-shadow: 0 0 6px #3F0C1F;
+  }
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  /* End Header */
+
+ /* FOOTER */.panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+}
+
+
+
+
+
+/**** CAJAS DE ABAJO ****/
+#top, #bottom {
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+      border: 1px solid black;
+}
+
