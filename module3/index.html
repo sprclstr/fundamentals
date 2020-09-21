@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <link rel="stylesheet" href="css/style1.css">
+    <title>My Restaurant</title> <style></style>
+  </head>
+<!--****************** CONTENT ******************-->
+  <body>
+<!--******************* HEADER ******************-->
+    <header>
+
+     <!--********** LOGO **********-->
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <!--********** WHEN TO DISPLAY LOGO **********-->
+            <a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
+
+           <!--********** TEXTO DENTRO HEADER **********-->
+           <div class="navbar-brand">
+            <a href="index.html"><h1>POLE CON MOLLO</h1></a>
+            <p>
+              <img src="img/star-k-logo.png" alt="Kosher certification">
+              <span>El Morro Seal of Approval</span>
+            </p>
+           </div>
+
+           <!--********** BOTON DENTRO HEADER CUANDO COLAPSA **********-->
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </button>
+         </div>
+
+           <!--********** ICONOS DEL MENU CUANDO NO ESTÁ COLAPSADO **********-->
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:55-2329-5674">
+                <span>55 2329 5674</span></a><div>*Hacemos envios</div>
+            </li>
+           </ul>
+           </div>          
+        </div>
+      </nav>
+    </header>
+
+<!--****************** BOTON CALL CUANDO MINI ******************-->
+<div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    55 2329 5674
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">*We  Deliver*</div>
+
+<!--****************** STUFF ******************-->
+
+ <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="img/ttt.jpg" alt="Picture of restaurant" class="img-responsive visible-xs ">
+    </div>
+  </div>
+
+<!--
+    <h1> Random Text </h1>
+
+    <div id="top" class="pull-left">Testing top</div>
+    <div id="bottom">Testing bottom</div>
+-->
+
+   <!---------------- jQuery ---------------->
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/jquery-2.1.4.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/script.js"></script>
+
+ </body>
+</html>
