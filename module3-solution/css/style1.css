@@ -99,6 +99,7 @@ body {
   color: black;
   text-align: center;
   background: #d9d9d9ff;
+  border: solid 1px black;
 
 }
 #element{
@@ -107,8 +108,6 @@ body {
 
 #nav-list a:hover {
   background: #c9c9c9;
-    border-color: black;
-  border-width: 2.5px;
 
 }
 
